@@ -1,0 +1,34 @@
+<nav class="navbar navbar-light" style="padding: 10px 30px 10px 30px; background-color: #eadce7" href="#">
+  <a class="navbar-brand" style="font-weight: bold; font-size: 30px;">Café da manhã</a>
+  <form class="form-inline">
+    <button class="btn btn-outline-success my-2 my-sm-0" routerLink="" type="submit" style="background-color: #dceae6; border: none; box-shadow: 5px 5px 18px #888888;">Listagem</button>
+  </form>
+</nav>
+
+<form [formGroup]="formulario" (submit)="validaFormulario()" class="container" style="background:	#eadce7; width: 450px; padding: 20px 30px 20px 30px; border-radius: 10px; margin-top: 100px;">
+
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">Nome</label>
+  <input [ngClass]="aplicaCssErro('nome')" formControlName="nome" type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite o seu primeiro e segundo nome">
+  <span class="invalid-feedback" style="font-size: 12px;">Campo obrigatório</span>
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Sobrenome</label>
+  <input [ngClass]="aplicaCssErro('sobrenome')" formControlName="sobrenome" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite o seu sobrenome">
+  <span class="invalid-feedback" style="font-size: 12px;">Campo obrigatório</span>
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">Cpf</label>
+  <input [ngClass]="aplicaCssErro('cpf')" formControlName="cpf" type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00">
+  <span class="invalid-feedback" style="font-size: 12px;">Campo obrigatório</span>
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">O que quer levar?</label>
+  <input [ngClass]="aplicaCssErro('prato')" formControlName="prato" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite o que gostaria de levar para o café da manhã">
+  <span class="invalid-feedback" style="font-size: 12px;">Campo obrigatório</span>
+</div>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" *ngIf="!isEdit" type="submit" style="background-color: #dceae6; border: none; color: black; box-shadow: 5px 10px 12px #888888; margin-top: 20px;">Registrar</button>
+  <button class="btn btn-primary" *ngIf="isEdit" type="submit" style="background-color: #dceae6; border: none; color: black; box-shadow: 5px 10px 12px #888888; margin-top: 20px;">Editar</button>
+</div>
+</form>

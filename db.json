@@ -1,0 +1,11 @@
+{
+  "funcionario": [
+    {
+      "nome": "Marina",
+      "sobrenome": "Rosa",
+      "cpf": "123.456.789-78",
+      "prato": "aaaa",
+      "id": 1
+    }
+  ]
+}

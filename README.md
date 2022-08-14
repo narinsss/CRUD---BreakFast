@@ -1,4 +1,12 @@
 # Breakfast
+## Cadastro de funcionários para registrar o prato para o café da manhã corporativo: 
+
+![alt text](https://github.com/narinsss/CRUD---BreakFast/blob/main/cadastro.PNG)
+
+## Listagem de funcionários: 
+
+![alt text](https://github.com/narinsss/CRUD---BreakFast/blob/main/listagem.PNG)
+
 
 ## Lista de Passos
 
